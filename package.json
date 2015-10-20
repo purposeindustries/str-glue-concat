@@ -1,0 +1,21 @@
+{
+  "name": "str-glue-concat",
+  "version": "1.0.0",
+  "description": "Concatenates strings with a separator in a clever way.",
+  "repository": "purposeindustries/str-glue-concat",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": {
+    "name": "Tamas Fodor",
+    "email": "tf@purposeindustries.co"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.2.1"
+  },
+  "dependencies": {
+    "last-char": "^1.1.1"
+  }
+}
