@@ -1,3 +1,5 @@
+'use strict';
+
 var lastChar = require('last-char');
 var assert = require('assert');
 
@@ -24,9 +26,12 @@ module.exports = function concat(strings, glue) {
   }
 
   return (strings).reduce(function (prev, current, i, arr) {
-
     assertString(current);
-
-    return prev += current + ((i < arr.length - 1 && lastChar(current) != glue) ? glue : '');
+    prev += current + (
+      (i < arr.length - 1 && lastChar(current) !== glue) ?
+        glue :
+        ''
+    );
+    return prev;
   }, '');
 };
